@@ -1,4 +1,5 @@
 import express from 'express';
+import AppFirebaseAdminSDK from './firebase-sdk/firebase-sdk';
 import AuthRouter from './router-units/auth/auth';
 
 class App {
@@ -9,7 +10,14 @@ class App {
   static main() {
 
     this.initServe()
+    this.initFirebaseApp()
     this.registerRouterUnits()
+
+  }
+
+  static initFirebaseApp() {
+
+    AppFirebaseAdminSDK.initFirebaseApp()
 
   }
 
@@ -29,6 +37,9 @@ class App {
       console.log('Example app listening on port 3000!');
     });
 
+    this.app.use(express.json()) // for parsing application/json
+    // this.app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+    
   }
 
 }
