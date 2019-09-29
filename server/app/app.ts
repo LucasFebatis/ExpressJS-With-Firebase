@@ -10,7 +10,7 @@ class App {
   static main() {
 
     this.initServe()
-    this.initFirebaseApp()
+    // this.initFirebaseApp()
     this.registerRouterUnits()
 
   }
