@@ -1,0 +1,22 @@
+<div class="center">
+
+  <div>
+    <input name="email" [(ngModel)]="email" placeholder="email" />
+    <input name="senha" [(ngModel)]="senha" placeholder="senha" />
+  </div>
+
+  <div>
+    <button type="button" (click)="makeEntrar()">Entrar</button>
+    <button type="button" (click)="makeMicrosoft()">Microsoft</button>
+  </div>
+
+  <div>
+    <label>uid: {{uid}} - </label>
+    <label>idToken: {{idToken}} - </label>
+  </div>
+
+  <div>
+    <button type="button" (click)="makeVerify()">verifyIdToken</button>
+  </div>
+
+</div>
