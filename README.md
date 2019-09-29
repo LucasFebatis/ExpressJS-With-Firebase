@@ -13,3 +13,28 @@ Será nescessario colocar o SDK Admin Config no arquivo serviceAccountKey.json
 ### Frontend
 
 Será nescessario colocar o Web Client Config no arquivo app.component.ts
+
+## Como usar
+
+Comandos para executar os apps
+
+### Backend
+
+- Em Dev
+
+``` npm run serve ```
+
+- Em Prod
+
+``` npm run 'serve prod' ```
+
+
+### Frontend
+
+- Em Dev
+
+``` ng serve ```
+
+### Como usar
+
+Dentro
