@@ -1,6 +1,7 @@
 import express from 'express';
 import AppFirebaseAdminSDK from './firebase-sdk/firebase-sdk';
 import AuthRouter from './router-units/auth/auth';
+import MainInformationRouter from './router-units/main-information/main-information';
 
 class App {
   
@@ -23,7 +24,8 @@ class App {
 
   static registerRouterUnits() {
     
-    AuthRouter.registerAuthEndPoints(this.app)
+    AuthRouter.registerEndPoints(this.app)
+    MainInformationRouter.registerEndPoints(this.app)
 
   }
 

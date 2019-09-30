@@ -3,7 +3,7 @@ import FirebaseAuth from '../../controllers/auth-controller'
 
 class AuthRouter {
 
-    static registerAuthEndPoints(app: express.Application) {
+    static registerEndPoints(app: express.Application) {
 
         app.post('/login', (req, res) => {
 
